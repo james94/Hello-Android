@@ -20,10 +20,10 @@ $1000 to their total savings.
 ## Contents
 
 - **app**: contains the contents of our Android Application
-- **[MainActivity.java](./MakeItRain/app/src/main/java/com/guzmanx/makeitrain/MainActivity.java)**:
+- **[MainActivity.java](./app/src/main/java/com/guzmanx/makeitrain/MainActivity.java)**:
 contains Java source code for this project
 - **gradle**: build automation tool for building, cleaning and running Java application
-- **[res](./MakeItRain/app/src/main/res)**: contains the resources used in designing the android
+- **[res](./app/src/main/res)**: contains the resources used in designing the android
 app user interface. Ex: layout, buttons, text, background, etc
 
 ## How To Use Android App
