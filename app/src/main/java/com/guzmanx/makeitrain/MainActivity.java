@@ -55,8 +55,18 @@ public class MainActivity extends AppCompatActivity {
         // Give a visual cue to user they are saving a lot of money
         // checks if moneyCounter gets big 10,000, then change text color
         moneyCounter += 1000;
-        if(moneyCounter >= 10000) {
-            moneyText.setTextColor(Color.YELLOW);
+        switch(moneyCounter) {
+            case 10000:
+                // Approach 1: Set text color with predefined colors specified in color state list
+                moneyText.setTextColor(Color.WHITE);
+                break;
+            case 30000:
+                moneyText.setTextColor(Color.GREEN);
+                break;
+            case 50000:
+                // Approach 2: Set text color by getting our own hex color resource in colors.xml
+                moneyText.setTextColor(getResources().getColor(R.color.myYellow));
+                break;
         }
         // check if moneyCounter gets big, msg "Woah, you're getting richer"
         if(moneyCounter >= 50000) {
