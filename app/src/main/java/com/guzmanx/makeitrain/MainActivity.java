@@ -13,9 +13,6 @@ import android.widget.Toast;
 import java.text.NumberFormat;
 
 public class MainActivity extends AppCompatActivity {
-//    private Button showMoney;
-//    private Button showTag;
-
 
     private TextView moneyText;
     private TextView savingText;
@@ -24,30 +21,24 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        // Creates a layout view we can actually see called activity_main
         setContentView(R.layout.activity_main);
         moneyText = findViewById(R.id.money_text);
         savingText = findViewById(R.id.saving_text);
-//        showMoney = findViewById(R.id.button_make_rain);
-//        showTag = findViewById(R.id.button_show_tag);
-
-//        showMoney.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View v) {
-//                Log.d("MYTAG", "onClick: Show Money");
-//            }
-//        });
     }
 
+    // Listen on Show Tag button to be clicked using layout view, create toast message
     public void showTag(View view) {
         // Create toast message, small text that pop up on screen to let user know what happening
         // pass the context, the text, the duration for showing the message on the screen
         Toast.makeText(getApplicationContext(), R.string.app_name, Toast.LENGTH_LONG)
                 .show();
 
-        // Debugging
+        // Once you know things are working, get rid of log debugging
         //Log.d("MYTAG", "onClick: Show Money");
     }
 
+    // Listen on Make It Rain button to be clicked, increment counter, set text color, pop up msg
     public void makeItRain(View v) {
         // Convert android number to currency specific to android's region in the world
         NumberFormat numberFormat = NumberFormat.getCurrencyInstance(); // US ex: $1,000.00
@@ -74,7 +65,6 @@ public class MainActivity extends AppCompatActivity {
         }
         moneyText.setText(String.valueOf(numberFormat.format(moneyCounter)));
 
-        // Once you know things are working, get rid of log debugging
         // Log.d("MIR", "makeItRain: Tapped " + moneyCounter);
     }
 }
