@@ -1,7 +1,7 @@
 # Project: Make It Rain
 
-Notice in the Nexus 5X API 25 emulator demo, the total saving is $50,000
-, the text is yellow and there is a message displayed indicating the user is
+Notice in the **Nexus 5X API 25** emulator demo, the total saving is $50,000
+, the text is **yellow** and there is a message displayed indicating the user is
 doing a great job saving money.
 
 
@@ -32,15 +32,28 @@ Initially when opening application, you will start with $0.
 
 ![makeitrain_p0.jpg](./images/emulator/nexus_5x_api_25/makeitrain_p0.jpg)
 
+**Figure: "Make It Rain" $0 savings**
+
 1\. Click on "Make It Rain" button
 
 You will notice your money increments by $1000 each click.
 
 ![makeitrain_p1.jpg](./images/emulator/nexus_5x_api_25/makeitrain_p1.jpg)
 
-Once $10,000 dollars is reached, the text changes from black
-to yellow. Once $50,000 dollars is reached, text appears
-"Woah, keeping saving".
+**Figure: "Make It Rain" $1000 savings and money text black**
+
+Once $10,000 dollars is reached, the text changes from **black**
+to **white**. Once $30,000 is reached, the text changes from **white**
+ to **green**. Once $50,000 dollars is reached, text changes from
+ **green** to **yellow** and a message appears **"Woah, keeping saving"**.
+
+![makeitrain_white.jpg](./images/emulator/nexus_5x_api_25/makeitrain_white.jpg)
+
+**Figure: "Make It Rain" $10000 savings and money text white**
+
+![makeitrain_green.jpg](./images/emulator/nexus_5x_api_25/makeitrain_green.jpg)
+
+**Figure: "Make It Rain" $30000 savings and money text green**
 
 2\. Click on "Show TAG"
 
@@ -48,6 +61,8 @@ You will notice text will pop up indicating which button to
  use to interact with the app. In our case, "MakeItRain".
 
 ![makeitrain_p2.jpg](./images/emulator/nexus_5x_api_25/makeitrain_p2.jpg)
+
+**Figure: "Make It Rain" Show Tag toast message**
 
 ## Versions
 
